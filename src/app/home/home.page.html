@@ -1,0 +1,65 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons>
+      <ion-icon size="large" name="basketball-outline"></ion-icon>
+      <ion-title class="ion-text-center">Simple Apps</ion-title>
+    </ion-buttons>
+    
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle>Registration</ion-card-subtitle>
+      <ion-card-title>Simple Apps</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      Sebelum menggunakan aplikasi ini silahkan anda melakukan registrasi/pendaftaran pada form berikut ini
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-content>
+      <ion-item>
+        <ion-label position="floating" type="text">Nama Lengkap</ion-label>
+        <ion-input></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating" type="email">Email</ion-label>
+        <ion-input></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating" type="email">Tanggal Lahir</ion-label>
+        <ion-datetime value="2019-10-01T15:43:40.394Z" display-timezone="utc"></ion-datetime>
+      </ion-item>
+      <ion-list>
+        <ion-item>
+          <ion-select label="Jenis Kelamin" label-placement="floating">
+            <ion-select-option value="jenis kelamin">Laki - Laki</ion-select-option>
+            <ion-select-option value="jenis kelamin">Perempuan</ion-select-option>
+          </ion-select>
+        </ion-item>
+      </ion-list>
+      <ion-button color="success" expand="block">Submit</ion-button>
+      <ion-button color="warning" (click)="scorePage()" expand="block">Score Apps</ion-button>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-tabs>
+      <ion-tab-bar slot="bottom">
+        <ion-tab-button tab="home">
+          <ion-icon name="home-sharp"></ion-icon>
+        </ion-tab-button>
+        <ion-tab-button tab="person">
+          <ion-icon name="person-sharp"></ion-icon>
+        </ion-tab-button>
+        <ion-tab-button tab="back">
+          <ion-icon name="caret-back-sharp"></ion-icon>
+        </ion-tab-button>
+      </ion-tab-bar>
+    </ion-tabs>
+  </ion-toolbar>
+</ion-footer>
